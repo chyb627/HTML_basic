@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/ddm.jpg);
+    background-size: cover; /*사이즈가 축소가 되도 back-ground가 더이상 줄지않음. 반응형에서 씀*/
+  /*background-size: contain; /*그림이 잘리지 않게 함*/
+    background-repeat: no-repeat; /*창을 줄이면 반복해서 나오는 서진을 막아줌*/
+    background-position: center; /*백그라운드가 중앙에서부터 채워짐*/
+    padding: 20px;
+}
+
+.main-title {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.main-title-box {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.main-content {
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.main-button {
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'nanumsquare';
+    background-color: white;
+    border: none;
+    display: block; /*버튼 가운데 정렬 :display 블록과 마진 오토 해주기*/
+    margin: auto;
+}
+
+.position {  /*좌표속성 : top/bottom/left/right */
+    position: relative; /*좌표속성은 단독으로 못쓰임. 포지션으로 기준점을 미리 정해야함*/
+    top : 30px;         /*position:relative는 원래 위치에서 부터 좌표를 변경시켜줌*/
+}
+/*position:fixed는 스크롤이 되어도 화면에 고정됨*/
+/*position:absolute는 기준점이 내부모 박스
+  기준점으로 삼을 부모에게 position:relative를 해주면 적용 
+  위의 글씨 높이의 영향을 받지 않는 버튼을 만들고 심다면 그것은 absolute*/
+/*absolute 가운데 정렬하려면 left:0; right:0; margin:auto; width 5가지 설정 필요*/

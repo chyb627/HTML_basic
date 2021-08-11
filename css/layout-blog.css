@@ -1,0 +1,53 @@
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+.blog-content {
+    width: 80%;
+    height: 200px;
+    float: left;
+}
+
+.blog-pic {
+    float: left;
+}
+
+.blog-profile {
+    float: left;
+    margin-left: 10px;
+}
+
+.blog-image {
+    width: 20%;
+    height: 200px;
+    float: left;
+}
+
+.blog-title {
+    clear: both;
+}
+
+/*---------------------------
+           navbar
+---------------------------*/
+
+.li-inline li {
+    display: inline-block; /*왼쪽으로 정렬*/
+    width: 60px; /*글자간 간격을 띄워줌*/
+}
+
+.navbar {
+    width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.li-inline a {  /*셀렉터 사용, ul a 라고 써도 되지만 원하지않는곳에도 적용될 수 있음*/
+    text-decoration: none; /*링크의 밑줄등 제거*/
+}
+
+.li-inline a:visited {  /*보라색 링크(visited)를 수정하려면*/
+    color: blak;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="css/layout-blog.css">
+</head>
+
+<body>
+
+    <!-- navbar 만들기 -->
+    <nav class="navbar"> <!--기능은 div태그와 같지만 이게 navbar인걸 명시하고 싶을때 씀-->
+        <ul class="li-inline class2">  <!-- 클래스를 2개 지정하고 싶을때 띄어쓰기로 클래스를 써준다 -->
+            <li><a href="#">IT</a></li>
+            <li><a href="#">맛집</a></li>
+            <li><a href="#">동물</a></li>
+            <li><a href="#">뷰티</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- layout의 핵심은 div 박스로 만들어 내면된다.-->
+    <!-- div 박스의 특성은 한행을 전부 차지한다-->
+    <div class="container">
+        <div class="blog-content">
+            <div>
+                <img src="img/car.JPG" width="50px" class="blog-pic">
+                <div class="blog-profile">
+                    <h4 style="margin: 0px 10px;">CHABIRI</h4>
+                    <p>1시간 전 발행</p>
+                </div>
+            </div>
+
+            <div style="clear : both"> </div>
+
+            <div class="blog-title">
+                <h4 style="margin-top: 30px;">HAN RIVER view</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt architecto id, odit maxime fuga
+                    animi. Deserunt error amet sit cupiditate enim, obcaecati atque consequatur. Eum voluptatibus quos
+                    earum doloremque quae!</p>
+            </div>
+        </div>
+        <div class="blog-image">
+            <img src="img/BG.PNG" width="100%">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
