@@ -1,3 +1,7 @@
+div, input, textarea {
+    box-sizing: border-box; /*=padding/border까지를 박스의 실제 폭으로 해줘*/
+}
+
 body {
     margin: 0px;
 }
@@ -49,3 +53,77 @@ body {
   기준점으로 삼을 부모에게 position:relative를 해주면 적용 
   위의 글씨 높이의 영향을 받지 않는 버튼을 만들고 심다면 그것은 absolute*/
 /*absolute 가운데 정렬하려면 left:0; right:0; margin:auto; width 5가지 설정 필요*/
+
+.explain-box {
+    width: 80%; /*반응형을 가장쉽게 만드는 방법 width를 80%*/
+    max-width: 600px; /*최대폭을 지정해줘 사이즈가 엄청커져도 제한됨. 반응형에 많이쓰임*/
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+    position: relative;
+    top: -30px;
+    box-sizing: border-box; /*박스의 폭에 padding/border 포함함. 가로폭 문제 해결 */
+}
+
+.sample-input {
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+input[type=text] {   /*타입이 텍스트인 부분만. 속성명 = 속성값*/
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.form-background {
+    margin-top: 150px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    padding: 30px;
+    margin-bottom: 400px;
+}
+
+.form-white {
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: white;
+    margin: auto;
+}
+
+.form-input {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+    width: 100%;
+
+}
+
+.form-half {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.form-whole {
+    padding: 10px;
+}
+
+.form-submit {
+    width: 200px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    background-color: darkorange;
+    color: white;
+    font-size: 18px;
+    margin-left: auto;
+    display: block;
+    margin-right: 10px;
+}

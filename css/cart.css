@@ -1,0 +1,71 @@
+td, th {
+    /*border : 1px solid grey;*/
+    padding: 10px;
+    /*vertical-align: middle; /*위, 가운데, 밑 어디에 정렬할건지*/
+    /*text-align: center;*/
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.cart-background {
+    width: 100%;
+    padding: 20px;
+    background-color: #c2d3de;
+}
+
+.cart-form-container {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.cart-table {
+    background: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.cart-table td, .cart-table th {
+    border-bottom: 1px solid #c2d3de;
+}
+
+.cart-item {
+    width: 50%;
+    text-align: left;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-brown {
+    background-color: coral;
+    color: white;
+}
+
+.btn:hover {  /*버튼에 마우스 올렸을 때*/
+    background-color: chocolate;
+}
+/* .btn:focus{  /*버튼을 클릭하고 난 후*//*
+    background-color: red;
+} */
+.btn:active { /*버튼을 클릭했을 때*/
+    background-color: brown;
+}
+/*순서는 hover, focus, active 순으로 해야 오류 없음*/
+
+.custom-link{
+    text-decoration: none; /*링크 밑줄 제거*/
+}
+.custom-link:link {
+    color: black;
+}
+.custom-link:visited {
+    color: red;
+}
