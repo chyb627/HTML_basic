@@ -1,81 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/layout-site.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/layout-site.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="main-background">
-        <div class="main-title-box">
-            <h3 class="main-title">
-                Come DDM!
-            </h3>
-            <p class="main-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, deleniti vitae.
-                Delectus, quia.
-                Dignissimos, dicta totam, voluptas maiores nihil omnis vel fuga consequatur blanditiis possimus maxime,
-                sit doloribus accusamus atque?</p>
+        <!---------- nav메뉴 만들기 FlexBox 이용 ---------->
+
+        <div class="flex-container">
+            <p class="menu-logo">DDM Shop</p>
+            <span style="flex-grow: 10;"></span>
+            <span class="menu-item">Products</span>
+            <span class="menu-item">Services</span>
+            <span class="menu-item">Log In</span>
         </div>
-        <button class="main-button position">View Now</button>
-    </div>
 
-    <div class="explain-box">
-        <h4>Why we like DDM?</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum error voluptatem quasi cupiditate quos
-            fugit ullam vero voluptatibus, officia ipsam delectus doloribus reiciendis. Est amet necessitatibus commodi
-            perspiciatis veniam! Quasi?</p>
-    </div>
-    <br>
+        <!------------------------------------------------->
 
-    <div class="explain-box" style="padding: 50px;">
-        <h4>Why we like DDM?</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum error voluptatem quasi cupiditate quos
-            fugit ullam vero voluptatibus, officia ipsam delectus doloribus reiciendis. Est amet necessitatibus commodi
-            perspiciatis veniam! Quasi?</p>
-    </div>
-
-    <!---------------------------
-        Contact Me 창 만들기
-    ---------------------------->
-
-    <div class="form-background">
-        <!-- <form action="전송할 경로">  서버개발자들이 많이 사용함-->
-        <div class="form-white">
-            <h3> Contact me! </h3>
-            <form>
-                <div class="form-whole">
-                    <p> Your Email</p>
-                    <input class="form-input" type="email">
-                </div>
-                <div class="form-half">
-                    <p> First name</p>
-                    <input class="form-input" type="text">
-                </div>
-                <div class="form-half">
-                    <p> Last name</p>
-                    <input class="form-input" type="text">
-                </div>
-                <div style="clear: both"></div>
-                <div class="form-whole">
-                    <!--float쓴 다음엔 필수-->
-                    <p>Message</p>
-                    <textarea class="form-input" rows="5"></textarea>
-                </div>
-                <div class="form-whole">
-                    <input type="checkbox" id="check"> 
-                    
-                    <label for="check">글씨</label>
-                </div>
-                <button type="submit" class="form-submit">SEND</button>
-            </form>
+        <div class="main-background">
+            <div class="main-title-box">
+                <h3 class="main-title">
+                    Come DDM!
+                </h3>
+                <p class="main-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima, deleniti vitae. Delectus, quia. Dignissimos, dicta totam, voluptas
+                    maiores nihil omnis vel fuga consequatur blanditiis possimus maxime, sit
+                    doloribus accusamus atque?</p>
+            </div>
+            <button class="main-button position">View Now</button>
         </div>
-    </div>
 
-</body>
+        <div class="explain-box">
+            <h4>Why we like DDM?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum error
+                voluptatem quasi cupiditate quos fugit ullam vero voluptatibus, officia ipsam
+                delectus doloribus reiciendis. Est amet necessitatibus commodi perspiciatis
+                veniam! Quasi?</p>
+        </div>
+        <br>
+
+        <div class="explain-box" style="padding: 50px;">
+            <h4>Why we like DDM?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum error
+                voluptatem quasi cupiditate quos fugit ullam vero voluptatibus, officia ipsam
+                delectus doloribus reiciendis. Est amet necessitatibus commodi perspiciatis
+                veniam! Quasi?</p>
+        </div>
+
+        <!--------------------------- Contact Me 창 만들기 ---------------------------->
+
+        <div class="form-background">
+            <!-- <form action="전송할 경로"> 서버개발자들이 많이 사용함-->
+            <div class="form-white">
+                <h3>
+                    Contact me!
+                </h3>
+                <form>
+                    <div class="form-whole">
+                        <p>
+                            Your Email</p>
+                        <input class="form-input" type="email">
+                    </div>
+                    <div class="form-half">
+                        <p>
+                            First name</p>
+                        <input class="form-input" type="text">
+                    </div>
+                    <div class="form-half">
+                        <p>
+                            Last name</p>
+                        <input class="form-input" type="text">
+                    </div>
+                    <div style="clear: both"></div>
+                    <div class="form-whole">
+                        <!--float쓴 다음엔 필수-->
+                        <p>Message</p>
+                        <textarea class="form-input" rows="5"></textarea>
+                    </div>
+                    <div class="form-whole">
+                        <input type="checkbox" id="check">
+
+                        <label for="check">글씨</label>
+                    </div>
+                    <button type="submit" class="form-submit">SEND</button>
+                </form>
+            </div>
+        </div>
+
+    </body>
 
 </html>

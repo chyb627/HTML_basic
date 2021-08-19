@@ -73,3 +73,25 @@ table {
 .custom-link:visited {
     color: red;
 }
+
+body {
+    margin: 0;
+    font-family: '메인폰트';
+}
+
+@font-face {
+    font-family: '메인폰트';
+    src: url(../font/NanumSquare-master/NanumSquareR.woff);
+}
+
+@font-face {
+    font-family: 'nanumSquare';
+    font-weight: 400;
+    src: url(../font/NanumSquare-master/NanumSquareR.eot);
+    src: url(../font/NanumSquare-master/NanumSquareR.eot#iefix) format('embedded-opentype'),
+         url(../font/NanumSquare-master/NanumSquareR.woff) format('woff');
+}
+
+p,h3,h2,h1,span {
+    transform: rotate(0.03deg);
+}
